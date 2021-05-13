@@ -1,0 +1,40 @@
+$green-color: #39b385
+$dark-green: #2D8B67
+$red-color: #e52a5a
+$yellow-color: #ffcb03
+$light-color: #f4f4f4
+$medium-color: #ccc
+$dark-color: #333
+$darkest-color: #000
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    font-family: "Lato", sans-serif
+    line-height: 1.6;
+    background: #fff;
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+#toastContainer
+    position: fixed
+    bottom: 20px
+    right: 70px
+
+.toast
+    margin-bottom: 1rem
+    color: $dark-color
+    padding: 1rem
+    background-color: $medium-color
+    width: 300px
+    text-align: center
+    transition: opacity 0.2s, top 0.2s, visibility 0.2s
+    &--toast
+        &-added
+            border-left: 3px solid $green-color
+        &-error
+            border-left: 3px solid $red-color
