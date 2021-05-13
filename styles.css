@@ -24,6 +24,28 @@ body {
           flex-direction: column;
 }
 
+body h1 {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+body button {
+  color: #333;
+  cursor: pointer;
+  line-height: 45px;
+  padding: 0.5rem;
+  border: none;
+  background-color: #39b385;
+  text-decoration: none;
+  opacity: 0.8;
+  -webkit-transition: opacity, 0.2s;
+  transition: opacity, 0.2s;
+}
+
+body button:hover {
+  opacity: 1;
+}
+
 #toastContainer {
   position: fixed;
   bottom: 20px;

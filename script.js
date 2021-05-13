@@ -9,7 +9,6 @@ agregarCarrito.addEventListener("click", function() {
     const toastNotif = document.createElement("div");
     if(countCarrito < 2){
         let toastNotification = crearNotificacion(toastNotif, "added");
-
         divToast.appendChild(toastNotif);
         countCarrito++;
     }
